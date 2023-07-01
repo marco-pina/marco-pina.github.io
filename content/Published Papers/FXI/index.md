@@ -19,4 +19,4 @@ testimonial:
 
 **Abstract:** This paper provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the parameters of the models. Based on that we conclude that point estimates of SR should be taken with caution as they depend on the characteristics of the dataset, in terms of the sample-size, maturities, and smoothness. The latter is even more crucial than other settings discussed previously in the literature, such as the number of factors.<br>
 
-[Link to publication](https://www.sciencedirect.com/science/article/pii/S2666143823000030)
+[Link to publication: LAJCB 2023](https://www.sciencedirect.com/science/article/pii/S2666143823000030)
