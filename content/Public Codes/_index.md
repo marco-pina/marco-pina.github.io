@@ -4,7 +4,11 @@ description: Hey, I'm Marco Piña
 images: ["/images/sample.jpg"]
 ---
 
-### Replication codes of papers (in progress)
+
+This section is still in progress, but if you dig into my github repositories, you'll find everything that's supposed to be here.
+
+
+### Replication codes of papers
 
 ##### *"Uninsured Idiosyncratic Risk and Aggregate Saving"* - Aiyagari (1994)
 Discrete time <br>
@@ -25,7 +29,7 @@ Continuous time
 ##### *"A Macroprudential Theory of Foreign Reserve Accumulation"* - Arce, Bengui and Bianchi (2022)
 
 
-### Numerical stuff in Julia (in progress)
+### Numerical stuff in Julia
 
 ##### Interpolation schemes in Julia
 ##### Multivariate Brownian simulation

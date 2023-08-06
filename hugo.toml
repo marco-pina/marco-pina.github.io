@@ -41,9 +41,9 @@ pygmentsCodeFences=true
   portfolio = "project"
   
 [params.sidebar]
-  backgroundImage = 'images/side_bar.jpg' # header background image - default "/images/default_sidebar.jpg" images/side_bar.jpg
+  backgroundImage = 'images/WP.png' # header background image - default "/images/default_sidebar.jpg" images/side_bar.jpg
   gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = 'images/mp2.jpg' # - default "/images/edna-west.jpg" images/mp.jpg
+  logo = 'images/UVA.jpeg' # - default "/images/edna-west.jpg" images/mp.jpg
 [params.assets]
   favicon = ""
   customCSS = ""
