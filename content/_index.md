@@ -4,9 +4,9 @@ description: Welcome to this sample project
 images: ["/images/sample.jpg"]
 ---
 
-Hey,
+Hi,
 
-I'm Marco Piña, an economist interested in conducting research in macrofinance using computational methods. I have experience developing, calibrating and computing partial equilibrium and DSGE models, as well as estimating high and low frequency time series econometric models. I am currently a Economics PhD student at the University of Virginia.
+I'm Marco Piña, an economist interested in macrofinance and computational methods. I have experience developing, calibrating and computing partial equilibrium and DSGE models, as well as estimating high and low frequency time series econometric models. I am currently a first-year PhD student in Economics at the University of Virginia.
 
 Welcome to my personal website. Here you will find information about my research projects and also some codes I have made available on Github.
 
