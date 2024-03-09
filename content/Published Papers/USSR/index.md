@@ -1,5 +1,5 @@
 ---
-title: Estimates of the US Shadow-Rate
+title: Estimates of the US Shadow-Rate (LAJCB, 2023)
 description: This is the description of our sample project
 date: "2023-03-01"
 jobDate: 2023

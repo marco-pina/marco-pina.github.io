@@ -5,7 +5,7 @@ images: ["/images/sample.jpg"]
 ---
 
 
-This section is still in progress, but if you dig into my github repositories, you'll find everything that's supposed to be here.
+This section is still in progress, but if you dig into my github repositories, you will find everything that is supposed to be here.
 
 
 ### Replication codes of papers

@@ -1,5 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>javascript on Home</title><link>https://example.com/techs/javascript/</link><description>Recent content in javascript on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright/><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/techs/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple Implementable Financial Policy Rules</title><link>https://example.com/working-papers/simple-implementable-financial-policy-rules/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://example.com/working-papers/simple-implementable-financial-policy-rules/</guid><description>(with Mauricio Calani and Javier Moreno)
-Abstract: How important, in terms of welfare, is the counter-cyclical capital buffer (CCyB) relative to other —higher and more permanent— bank capital requirements? While there is better understanding of the effect of a cyclical higher capital requirements on banks’ resilience and credit supply, much less is known about the marginal effects of introducing a macroprudential counter-cyclical capital requirement. In this paper, we study the welfare implications of introducing several simple and implementable financial policy (CCyB) rules that coexist with monetary policy.</description></item><item><title>Exchange rate volatility and the effectiveness of FX interventions; The case of Chile</title><link>https://example.com/published-papers/fxi/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>https://example.com/published-papers/fxi/</guid><description>(with Alejandro Jara)
-Abstract: This paper provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the parameters of the models. Based on that we conclude that point estimates of SR should be taken with caution as they depend on the characteristics of the dataset, in terms of the sample-size, maturities, and smoothness.</description></item><item><title>Estimates of the US Shadow-Rate</title><link>https://example.com/published-papers/ussr/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://example.com/published-papers/ussr/</guid><description>(with Rodrigo Herrera)
-Abstract: This paper provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the parameters of the models. Based on that we conclude that point estimates of SR should be taken with caution as they depend on the characteristics of the dataset, in terms of the sample-size, maturities, and smoothness.</description></item><item><title>Market Risk Modeling with Option-Implied Covariances and Score-Driven Dynamics</title><link>https://example.com/working-papers/icw/</link><pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate><guid>https://example.com/working-papers/icw/</guid><description>(with Rodrigo Herrera)
-Abstract: In this paper we make use of option-implied volatilities to build a time-varying implied correlation matrix. Then, we use this matrix to estimate jointly both the covariance matrix of the returns and the implied covariance matrix dynamics. Finally, we do a backtest and show that the proposed model can effectively use the risk-neutral information to model the variance of the returns and to forecast the Value-at-Risk. Our results show that, in general, the proposed model outperforms the benchmark while considerably reducing the number of parameters to be estimated</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Home</title>
+    <link>http://localhost:1313/techs/javascript/</link>
+    <description>Recent content in Javascript on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> </copyright>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/techs/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Market Risk Modeling with Option-Implied Covariances and Score-Driven Dynamics</title>
+      <link>http://localhost:1313/published-papers/icw/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/published-papers/icw/</guid>
+      <description>(with Rodrigo Herrera)&#xA;Abstract: In this paper we make use of option-implied volatilities to build a time-varying implied correlation matrix. Then, we use this matrix to estimate jointly both the covariance matrix of the returns and the implied covariance matrix dynamics. Finally, we do a backtest and show that the proposed model can effectively use the risk-neutral information to model the variance of the returns and to forecast the Value-at-Risk. Our results show that, in general, the proposed model outperforms the benchmark while considerably reducing the number of parameters to be estimated</description>
+    </item>
+    <item>
+      <title>Simple Implementable Financial Policy Rules</title>
+      <link>http://localhost:1313/working-papers/simple-implementable-financial-policy-rules/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/working-papers/simple-implementable-financial-policy-rules/</guid>
+      <description>(with Mauricio Calani and Javier Moreno)&#xA;Abstract: How important, in terms of welfare, is the counter-cyclical capital buffer (CCyB) relative to other —higher and more permanent— bank capital requirements? While there is better understanding of the effect of a cyclical higher capital requirements on banks’ resilience and credit supply, much less is known about the marginal effects of introducing a macroprudential counter-cyclical capital requirement. In this paper, we study the welfare implications of introducing several simple and implementable financial policy (CCyB) rules that coexist with monetary policy.</description>
+    </item>
+    <item>
+      <title>Exchange rate volatility and the effectiveness of FX interventions; The case of Chile</title>
+      <link>http://localhost:1313/published-papers/fxi/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/published-papers/fxi/</guid>
+      <description>(with Alejandro Jara)&#xA;Abstract: This paper provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the parameters of the models. Based on that we conclude that point estimates of SR should be taken with caution as they depend on the characteristics of the dataset, in terms of the sample-size, maturities, and smoothness.</description>
+    </item>
+    <item>
+      <title>Estimates of the US Shadow-Rate</title>
+      <link>http://localhost:1313/published-papers/ussr/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/published-papers/ussr/</guid>
+      <description>(with Rodrigo Alfaro)&#xA;Abstract: This paper provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the parameters of the models. Based on that we conclude that point estimates of SR should be taken with caution as they depend on the characteristics of the dataset, in terms of the sample-size, maturities, and smoothness.</description>
+    </item>
+  </channel>
+</rss>

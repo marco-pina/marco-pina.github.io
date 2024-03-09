@@ -1,6 +1,6 @@
 ---
-title: Exchange rate volatility and the effectiveness of FX interventions; The case of Chile
-description: Exchange rate volatility and the effectiveness of FX interventions The case of Chile
+title: Exchange rate volatility and the effectiveness of FX interventions; The case of Chile (LAJCB, 2023)
+description: This is the description of our sample project
 date: "2023-06-01"
 jobDate: 2023
 work: [design, architecture]
