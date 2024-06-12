@@ -2,71 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/techs/d3/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/techs/d3/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/designs/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/designs/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/techs/javascript/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/techs/javascript/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/published-papers/icw/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/published-papers/icw/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/designs/photoshop/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/designs/photoshop/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/published-papers/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/published-papers/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/techs/</loc>
-    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <loc>https://example.com/techs/</loc>
+    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/working-papers/simple-implementable-financial-policy-rules/</loc>
+    <loc>https://example.com/working-papers/simple-implementable-financial-policy-rules/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/working-papers/</loc>
+    <loc>https://example.com/working-papers/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/published-papers/fxi/</loc>
+    <loc>https://example.com/published-papers/fxi/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/published-papers/ussr/</loc>
+    <loc>https://example.com/published-papers/ussr/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/public-codes/</loc>
+    <loc>https://example.com/public-codes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/resume/</loc>
+    <loc>https://example.com/resume/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

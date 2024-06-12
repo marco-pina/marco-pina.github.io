@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Public Codes on Home</title>
-    <link>http://localhost:1313/public-codes/</link>
+    <link>https://example.com/public-codes/</link>
     <description>Recent content in Public Codes on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright> </copyright>
-    <atom:link href="http://localhost:1313/public-codes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/public-codes/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
