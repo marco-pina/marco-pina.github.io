@@ -11,35 +11,49 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Economics, University of Virginia, 2028 (expected)
+* M.A. in Economics, University of Virginia, 2024
+* M.S. in Economics, Universidad de Talca, 2020
+* B.S. in Business and Economics, Universidad de Talca, 2018
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Aug 2024 - Currently: Teaching Assistant and Grader - University of Virginia
+  * Intro to Micro (2010)
+  * Intro to Macro (2020)
+  * Money and Baking (3030)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Dic 2019 - Aug 2023: Economist - Central Bank of Chile
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Mar 2019 - Dic 2019: Research Assistant - Research Project Fondecyt Regular N°1180672
+
+* Jan 2019 - Mar 2019: Internship - Research and Risks Unit, Financial Market Comission
+
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Coding
+  * Julia
+  * Matlab
+  * R
+  * Python
+
+* Developer tools
+  * Git/Github
+  * VS code
+  * Jupyter
+
+* Software
+  * Stata
+  * Dynare
+
+* Datastream
+  * Bloomberg
+  * Eikon-Thomson Reuters
+
+* Languages
+  * Spanish (native)
+  * English (proficient)
 
 Publications
 ======
@@ -47,18 +61,18 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Working Papers
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
