@@ -29,10 +29,40 @@ Work experience
 
 * Jan 2019 - Mar 2019: Internship - Research and Risks Unit, Financial Market Comission
 
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Working Papers
+======
+  <ul>{% for post in site.wp reversed %}
+    {% include archive-single-cv.html  %}
+  {% endfor %}</ul>
+
+Work in Progress
+======
+  <ul>{% for post in site.wip reversed %}
+    {% include archive-single-cv.html  %}
+  {% endfor %}</ul>
+
 
 Skills
 ======
-* Coding
+
+<table>
+  <tr>
+    <td valign="top"><strong>Coding</strong><br/>Julia<br/>Matlab<br/>R<br/>Python</td>
+    <td valign="top"><strong>Developer tools</strong><br/>Git/GitHub<br/>VS Code<br/>Jupyter</td>
+    <td valign="top"><strong>Software</strong><br/>Stata<br/>Dynare</td>
+    <td valign="top"><strong>Datastream</strong><br/>Bloomberg<br/>Eikon-Thomson Reuters</td>
+    <td valign="top"><strong>Languages</strong><br/>Spanish (native)<br/>English (proficient)</td>
+  </tr>
+</table>
+
+
+<!-- * Coding
   * Julia
   * Matlab
   * R
@@ -53,25 +83,8 @@ Skills
 
 * Languages
   * Spanish (native)
-  * English (proficient)
+  * English (proficient) -->
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Working Papers
-======
-  <ul>{% for post in site.wp reversed %}
-    {% include archive-single-cv.html  %}
-  {% endfor %}</ul>
-
-Work in Progress
-======
-  <ul>{% for post in site.wip reversed %}
-    {% include archive-single-cv.html  %}
-  {% endfor %}</ul>
 
 <!-- <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
