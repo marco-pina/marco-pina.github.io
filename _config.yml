@@ -273,6 +273,24 @@ defaults:
       author_profile: true
       share: true
       comments: true
+    # _wp
+  - scope:
+      path: ""
+      type: wp
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+    # _wip
+  - scope:
+      path: ""
+      type: wip
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""
