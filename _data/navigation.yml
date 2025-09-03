@@ -17,11 +17,14 @@ main:
   - title: "Work in Progress"
     url: /wip/    
 
-  - title: "Public Codes" #Blog Posts
-    url: /codes/  #url: /year-archive/
+  - title: "Public Codes" 
+    url: /codes/  
     
   - title: "CV"
     url: /cv/
+
+  # - title: "Blog Posts"
+  #   url: /year-archive/
 
   # - title: "Teaching"
   #   url: /teaching/    
