@@ -67,7 +67,13 @@ Working Papers
     {% include archive-single-cv.html  %}
   {% endfor %}</ul>
 
-  <!-- <ul>{% for post in site.talks reversed %}
+Work in Progress
+======
+  <ul>{% for post in site.wip reversed %}
+    {% include archive-single-cv.html  %}
+  {% endfor %}</ul>
+
+<!-- <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul> -->
   
