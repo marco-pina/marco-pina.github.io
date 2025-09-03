@@ -49,10 +49,12 @@
                 <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
             {% endif %}
         {% elsif post.collection == 'wp' %}
-            {% if post.coauthor and post.coauthorURL %}
-                <p> with <a href="{{ post.coauthorURL }}">{{ post.coauthor }}</a></p>
-            {% elsif post.coauthor %}
-                <p>with {{ post.coauthor }}</p>
+            {% if post.coauthor1 and post.coauthorURL1 and post.coauthor2 and post.coauthorURL2 %}
+                <p> with <a href="{{ post.coauthorURL1 }}">{{ post.coauthor1 }}</a> and <a href="{{ post.coauthorURL2 }}">{{ post.coauthor2 }}</a></p>
+            {% elsif post.coauthor1 and post.coauthorURL1 %}
+                <p> with <a href="{{ post.coauthorURL1 }}">{{ post.coauthor1 }}</a></p>
+            {% elsif post.coauthor1 %}
+                <p>with {{ post.coauthor1 }}</p>
             {% endif %}
         {% elsif post.collection == 'wip' %}
             {% if post.coauthor and post.coauthorURL %}
