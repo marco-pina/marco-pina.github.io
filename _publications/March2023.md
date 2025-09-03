@@ -1,0 +1,13 @@
+---
+title: "Estimates of the US shadow-rate"
+collection: publications
+category: manuscripts
+permalink: /publication/March2023  # 2010-10-01-paper-title-number-2
+# excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+date: March 2023
+venue: 'Latin American Journal of Central Banking'
+# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S2666143822000345'
+# citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+---
+This article provides several estimates for the shadow rate (SR) of the short-term interest rate in US. We assume maximal models with two and three Gaussian factors, and we use forward rates to estimate the model’s parameters. Based on that, we conclude that point estimates of SR should be taken with caution because they depend on the characteristics of the data set, including the sample size, maturities, and smoothness. The latter is even more crucial than other settings discussed previously in the literature, such as the number of factors.
