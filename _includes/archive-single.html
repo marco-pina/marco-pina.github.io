@@ -60,10 +60,16 @@
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a></p>
-    {% elsif post.citation and post.paperurl and post.coauthor%}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a> (with <a href="{{ post.coauthor }}"></a>)</p>
+    {% elsif post.citation and post.paperurl and post.coauthor %}
+      <p>Recommended citation: {{ post.citation }}<br />
+      <a href="{{ post.paperurl }}">Link to the article</a> (with {{ post.coauthor }})</p>
     {% elsif post.citation and post.paperurl and post.coauthor and post.coauthorURL %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a> (with <a href="{{ post.coauthorURL }}"><a href="{{ post.coauthor }}"></a></a>)</p>  
+      <p>Recommended citation: {{ post.citation }}<br />
+      <a href="{{ post.paperurl }}">Link to the article</a> (with <a href="{{ post.coauthorURL }}">{{ post.coauthor }}</a>)</p>
+    <!-- {% elsif post.citation and post.paperurl and post.coauthor%}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a> (with <a href="{{ post.coauthor }}">{{ post.coauthor }}</a>)</p>
+    {% elsif post.citation and post.paperurl and post.coauthor and post.coauthorURL %}
+      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Link to the article</a> (with <a href="{{ post.coauthorURL }}"><a href="{{ post.coauthor }}"></a></a>)</p>   -->
     {% elsif post.citation and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
     {% elsif post.citation and post.slidesurl %}
