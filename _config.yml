@@ -227,6 +227,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  wp:
+    output: true
+    permalink: /:collection/:path/
+  wip:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
