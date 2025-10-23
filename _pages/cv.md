@@ -21,7 +21,7 @@ Work experience
 * Aug 2024 - Currently: Teaching Assistant and Grader - University of Virginia
   * Intro to Micro (2010)
   * Intro to Macro (2020)
-  * Money and Baking (3030)
+  * Money and Banking (3030)
 
 * Dic 2019 - Aug 2023: Economist - Central Bank of Chile
 
