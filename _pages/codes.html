@@ -7,46 +7,49 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.codes reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
 <section>
   <p>
-    This section is still in progress, but if you dig into my
-    <a href="https://github.com/marco-pina/Utilities" target="_blank">GitHub repositories</a>,
-    you will find everything that is supposed to be here.
+    In this section I share simple replication codes for papers that I have worked on using Julia.
+    These implementations are meant to help others understand and reproduce the key results from these papers.
+    All code is available in my <a href="https://github.com/marco-pina/Utilities" target="_blank">GitHub repository</a>.
   </p>
 
-  <h3>Replication codes of papers</h3>
+  <h3>Replication Codes</h3>
   <ul>
     <li>
       <strong><em>"Uninsured Idiosyncratic Risk and Aggregate Saving"</em> - Aiyagari (1994)</strong>
       <ul>
-        <li>Discrete time</li>
-        <li>Continuous time</li>
+        <li><a href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_DT" target="_blank">Discrete time</a></li>
+        <li><a href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_CT" target="_blank">Continuous time</a></li>
       </ul>
     </li>
-    <li><strong><em>"Risk Management: Coordinating Corporate Investment and Financing Policies"</em> - Froot, Schaferstein and Stein (1993)</strong></li>
-    <li><strong><em>"The GARCH Option Pricing Model"</em> - Duan (1995)</strong></li>
-    <li><strong><em>"Risk and Income Fluctuations in Emerging Economies"</em> - Arellano (2008)</strong></li>
-    <li><strong><em>"Collateral, Risk Management, and the Distribution of Debt Capacity"</em> - Rampini and Viswanathan (2010)</strong></li>
-    <li><strong><em>"Overborrowing and Systemic Externalities in the Business Cycle"</em> - Bianchi (2011)</strong></li>
-    <li><strong><em>"Finite-State Approximation Of VAR Processes: A Simulation Approach"</em> - Stephanie Schmitt-Grohé and Martín Uribe (2014)</strong></li>
-    <li><strong><em>"A Macroprudential Theory of Foreign Reserve Accumulation"</em> - Arce, Bengui and Bianchi (2022)</strong></li>
-  </ul>
-
-  <h3>Numerical stuff in Julia</h3>
-  <ul>
-    <li>Interpolation schemes in Julia</li>
-    <li>Multivariate Brownian simulation</li>
     <li>
-      Gradient and Hessian
-      <ul>
-        <li>Automatic differentiation</li>
-        <li>Numerical differentiation</li>
-      </ul>
+      <strong><em>"Risk Management: Coordinating Corporate Investment and Financing Policies"</em> - Froot, Scharfstein and Stein (1993)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/froot1993" target="_blank">code</a>]
     </li>
-    <li>Tauchen method for a VAR process</li>
+    <li>
+      <strong><em>"The GARCH Option Pricing Model"</em> - Duan (1995)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/duan1995" target="_blank">code</a>]
+    </li>
+    <li>
+      <strong><em>"Default Risk and Income Fluctuations in Emerging Economies"</em> - Arellano (2008)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/arellano2008" target="_blank">code</a>]
+    </li>
+    <li>
+      <strong><em>"Collateral, Risk Management, and the Distribution of Debt Capacity"</em> - Rampini and Viswanathan (2010)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/rampini2010" target="_blank">code</a>]
+    </li>
+    <li>
+      <strong><em>"Overborrowing and Systemic Externalities in the Business Cycle"</em> - Bianchi (2011)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/Bianchi2011" target="_blank">code</a>]
+    </li>
+    <li>
+      <strong><em>"Finite-State Approximation Of VAR Processes: A Simulation Approach"</em> - Schmitt-Grohé and Uribe (2014)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/SGU2014_tpm" target="_blank">code</a>]
+    </li>
+    <li>
+      <strong><em>"A Macroprudential Theory of Foreign Reserve Accumulation"</em> - Arce, Bengui and Bianchi (2022)</strong>
+      [<a href="https://github.com/marco-pina/Utilities/tree/main/Papers/arce2021" target="_blank">code</a>]
+    </li>
   </ul>
 </section>
