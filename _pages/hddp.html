@@ -1,0 +1,101 @@
+---
+layout: archive
+title: "High-Dimensional Dynamic Programming"
+permalink: /hddp/
+author_profile: true
+---
+
+{% include base_path %}
+
+<section>
+  <p>
+    This section showcases computational methods for solving High-Dimensional Dynamic Programming problems in economics.
+    The notebooks demonstrate three different approaches applied to models of occasionally binding constraints
+    (based on <a href="https://github.com/marco-pina/Utilities/tree/main/Papers/Bianchi2011" target="_blank">Bianchi, 2011</a>)
+    and sovereign default (based on <a href="https://github.com/marco-pina/Utilities/tree/main/Papers/arellano2008" target="_blank">Arellano, 2008</a>).
+  </p>
+
+  <p>
+    <em>Note: These implementations are the result of my own learning process and may not perfectly replicate the original papers.
+    While the models might be incomplete or contain simplifications, the computational methods and code structure may still be useful
+    for understanding these solution techniques. More details about the exact model specifications and equations will be added soon.</em>
+  </p>
+
+  <h3>JAX-based Methods</h3>
+  <p style="margin-left: 20px; font-style: italic;">
+    These routines are based on <a href="https://quantecon.org/" target="_blank">QuantEcon</a> lectures.
+    The solution method for the default model with long-term debt follows
+    <a href="https://oxfordre.com/economics/display/10.1093/acrefore/9780190625979.001.0001/acrefore-9780190625979-e-941" target="_blank">Gabriel Mihalache (2025)</a>.
+  </p>
+  <ul style="margin-left: 20px;">
+    <li>
+      <strong>Occasionally Binding Constraints Model</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/obc_JAX.ipynb" target="_blank">download</a>]
+    </li>
+    <li>
+      <strong>Sovereign Default Model with Long-Term Debt</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb" target="_blank">download</a>]
+    </li>
+  </ul>
+
+  <h3>Adaptive Sparse Grids (ASG)</h3>
+  <p style="margin-left: 20px; font-style: italic;">
+    These routines are based on <a href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA12216" target="_blank">Brumm and Scheidegger (2017)</a>,
+    with implementations available in
+    <a href="https://github.com/jacobadenbaum/AdaptiveSparseGrids.jl" target="_blank">Julia</a> and
+    <a href="https://github.com/SparseGridsForDynamicEcon/HDMR" target="_blank">Python</a>
+    by <a href="https://arxiv.org/abs/2202.06555" target="_blank">Eftekhari and Scheidegger (2022)</a>.
+    The solution method for the default model with long-term debt follows
+    <a href="https://oxfordre.com/economics/display/10.1093/acrefore/9780190625979.001.0001/acrefore-9780190625979-e-941" target="_blank">Gabriel Mihalache (2025)</a>.
+  </p>
+  <ul style="margin-left: 20px;">
+    <li>
+      <strong>Occasionally Binding Constraints Model (Julia)</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb" target="_blank">download</a>]
+    </li>
+    <li>
+      <strong>Occasionally Binding Constraints Model (Python)</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb" target="_blank">download</a>]
+    </li>
+    <li>
+      <strong>Sovereign Default Model with Long-Term Debt (Julia)</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb" target="_blank">download</a>]
+    </li>
+  </ul>
+
+  <h3>Artificial Neural Networks (ANN)</h3>
+  <p style="margin-left: 20px; font-style: italic;">
+    Deep learning approaches to solving dynamic programming problems using neural network function approximation.
+  </p>
+  <ul style="margin-left: 20px;">
+    <li>
+      <strong>Occasionally Binding Constraints Model (Flux.jl)</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb" target="_blank">download</a>]
+    </li>
+    <li>
+      <strong>Occasionally Binding Constraints Model (PyTorch)</strong>
+      [<a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb" target="_blank">view</a>]
+      [<a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb" target="_blank">github</a>]
+      [<a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb" target="_blank">download</a>]
+    </li>
+  </ul>
+
+  <hr style="margin-top: 30px; margin-bottom: 10px;">
+  <p style="font-size: 0.9em; color: #666;">
+    <strong>Note:</strong> All notebooks are implemented in Python or Julia and demonstrate different computational
+    approaches to solving the same economic models. Click "view" to see the rendered notebook on nbviewer,
+    "github" to view the source on GitHub, or "download" to get the .ipynb file directly.
+  </p>
+</section>

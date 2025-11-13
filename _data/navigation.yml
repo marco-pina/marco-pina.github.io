@@ -17,9 +17,12 @@ main:
   - title: "Work in Progress"
     url: /wip/    
 
-  - title: "Public Codes" 
-    url: /codes/  
-    
+  - title: "Public Codes"
+    url: /codes/
+
+  - title: "HDDP"
+    url: /hddp/
+
   - title: "CV"
     url: /cv/
 
