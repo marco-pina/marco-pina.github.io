@@ -18,6 +18,7 @@ Education
 
 Work experience
 ======
+* Nov 2025 - Currently: Research Assistant for [Anton Korinek](https://www.korinek.com/) - [EconTAI](https://www.econtai.org/), University of Virginia
 * Aug 2024 - Currently: Teaching Assistant and Grader - University of Virginia
   * Intro to Micro (2010)
   * Intro to Macro (2020)
@@ -25,7 +26,7 @@ Work experience
 
 * Dic 2019 - Aug 2023: Economist - Central Bank of Chile
 
-* Mar 2019 - Dic 2019: Research Assistant - Research Project Fondecyt Regular N°1180672
+* Mar 2019 - Dic 2019: Research Assistant for [Rodrigo Herrera](https://www.r-herrera.com/) - Research Project Fondecyt Regular N°1180672
 
 * Jan 2019 - Mar 2019: Internship - Research and Risks Unit, Financial Market Comission
 
