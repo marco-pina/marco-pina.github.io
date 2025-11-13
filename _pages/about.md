@@ -2,15 +2,21 @@
 permalink: /
 title: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a third-year PhD student in Economics at the University of Virginia. My research interests are primarily in the fields of macrofinance and computational economics.
+<div style="text-align: justify;">
 
-Specifically, my current work focuses on credit cycles, financial frictions, and macroprudential policies in emerging and developing economies. I employ computational techniques to construct and estimate both partial and general equilibrium models for the analysis of macroeconomic policy and financial markets. Additionally, I model financial time series using econometric methods for applications in forecasting and quantitative risk management.
+<p>I am a third-year PhD student in Economics at the University of Virginia, specializing in macrofinance and computational economics.</p>
 
-This website serves as a platform to showcase my research and provide access to relevant code. I am always open to engaging with fellow researchers and practitioners to discuss research ideas in macrofinance and financial econometrics.
+<p>My research focuses on financial stability in emerging economies, where shallow financial systems and volatile capital flows can amplify shocks. I seek to understand why some economies escape recurring financial crises while others remain vulnerable, emphasizing the role of financial frictions and macroprudential policy design. Currently, I am also exploring the implications of transformative AI (TAI) for financial stability.</p>
+
+<p>To address these questions, I use both structural and empirical approaches, combining modern techniques in computational methods, econometrics, and machine learning.</p>
+
+<p>This website hosts my research and replication code. I am always open to discussing new ideas and collaborations in macrofinance.</p>
+
+</div>
 
 UVA mail: [wju9nq@virginia.edu](wju9nq@virginia.edu)
