@@ -24,9 +24,9 @@ Work experience
   * Intro to Macro (2020)
   * Money and Banking (3030)
 
-* Dic 2019 - Aug 2023: Economist - Central Bank of Chile
+* Dic 2019 - Aug 2023: Economist - Macrofinancial Modeling Department, Central Bank of Chile
 
-* Mar 2019 - Dic 2019: Research Assistant for [Rodrigo Herrera](https://www.r-herrera.com/) - Research Project Fondecyt Regular N°1180672
+* Mar 2019 - Dic 2019: Research Assistant for [Rodrigo Herrera](https://www.r-herrera.com/) - Research Project, Fondecyt Regular N°1180672
 
 * Jan 2019 - Mar 2019: Internship - Research and Risks Unit, Financial Market Comission
 
@@ -54,10 +54,10 @@ Skills
 
 <table>
   <tr>
-    <td valign="top"><strong>Coding</strong><br/>Julia<br/>Matlab<br/>R<br/>Python</td>
+    <td valign="top"><strong>Coding</strong><br/>Julia<br/>R<br/>Python</td>
     <td valign="top"><strong>Developer tools</strong><br/>Git/GitHub<br/>VS Code<br/>Jupyter</td>
-    <td valign="top"><strong>Software</strong><br/>Stata<br/>Dynare</td>
-    <td valign="top"><strong>Datastream</strong><br/>Bloomberg<br/>Eikon-Thomson Reuters</td>
+    <td valign="top"><strong>Software</strong><br/>Stata<br/>Matlab<br/>Dynare</td>
+    <td valign="top"><strong>Datastream</strong><br/>Bloomberg<br/>LSEG-Workspace</td>
     <td valign="top"><strong>Languages</strong><br/>Spanish (native)<br/>English (proficient)</td>
   </tr>
 </table>
