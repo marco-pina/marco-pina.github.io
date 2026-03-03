@@ -10,6 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "Marco Piña - Economist"
+masthead_title           : "About me"
 title_separator          : "-"
 name                     : &name "Marco Piña"
 description              : &description "personal description"
@@ -63,6 +64,7 @@ author:
   instagram        : # Username
   lastfm           : # Username
   linkedin         : "marco-p-c"
+  cv               : "https://docs.google.com/gview?url=https://raw.githubusercontent.com/marco-pina/resume/main/marcopinaCV.pdf"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

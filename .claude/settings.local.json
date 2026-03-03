@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker --version)",
+      "Bash(docker compose up --build)",
+      "Bash(docker compose down)",
+      "Bash(docker compose up -d)",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 head -30 /usr/src/app/_site/index.html)",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"head -50 /usr/src/app/_site/index.html\")",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"grep -E ''\\(href|src\\)='' /usr/src/app/_site/index.html | head -20\")",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"ls /usr/src/app/_site/assets/css/\")",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"grep -E ''\\(href|src\\)='' /usr/src/app/_site/index.html | head -10\")",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"grep -i ''cv'' /usr/src/app/_site/index.html\")",
+      "Bash(docker exec marco-pinagithubio-jekyll-site-1 bash -c \"grep -i ''file-pdf'' /usr/src/app/_site/index.html\")"
+    ]
+  }
+}
