@@ -1,0 +1,112 @@
+---
+layout: signal
+title: "Code"
+permalink: /code/
+description: "Replication code and high-dimensional dynamic programming notebooks by Marco Piña."
+page_class: content-page
+nav: code
+redirect_from:
+  - /codes/
+---
+
+<header class="page-header">
+  <p class="section-label">Code</p>
+  <h1>Replication code and computational notebooks</h1>
+  <p class="page-intro">I share implementations that have been useful in my own study of quantitative macroeconomics and finance. The material is organized into paper replications and notebooks for high-dimensional dynamic programming.</p>
+</header>
+
+<section class="content-section" aria-labelledby="replication-heading">
+  <h2 class="section-heading" id="replication-heading">Replication codes</h2>
+  <p class="section-copy">Julia implementations of influential models in macroeconomics and finance. These are learning-oriented replications and may contain simplifications relative to the original papers.</p>
+  <ol class="code-list">
+    <li class="code-item">
+      <div class="code-year">1994 · Aiyagari</div>
+      <div>
+        <h3 class="code-title">Uninsured Idiosyncratic Risk and Aggregate Saving</h3>
+        <p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_DT">Discrete time</a> · <a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_CT">Continuous time</a></p>
+      </div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">1993 · Froot et al.</div>
+      <div><h3 class="code-title">Risk Management: Coordinating Corporate Investment and Financing Policies</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/froot1993">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">1995 · Duan</div>
+      <div><h3 class="code-title">The GARCH Option Pricing Model</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/duan1995">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">2008 · Arellano</div>
+      <div><h3 class="code-title">Default Risk and Income Fluctuations in Emerging Economies</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/arellano2008">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">2010 · Rampini &amp; Viswanathan</div>
+      <div><h3 class="code-title">Collateral, Risk Management, and the Distribution of Debt Capacity</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/rampini2010">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">2011 · Bianchi</div>
+      <div><h3 class="code-title">Overborrowing and Systemic Externalities in the Business Cycle</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Bianchi2011">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">2014 · Schmitt-Grohé &amp; Uribe</div>
+      <div><h3 class="code-title">Finite-State Approximation of VAR Processes: A Simulation Approach</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/SGU2014_tpm">View code</a></p></div>
+    </li>
+    <li class="code-item">
+      <div class="code-year">2022 · Arce et al.</div>
+      <div><h3 class="code-title">A Macroprudential Theory of Foreign Reserve Accumulation</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/arce2021">View code</a></p></div>
+    </li>
+  </ol>
+</section>
+
+<section class="content-section" id="high-dimensional-dynamic-programming" aria-labelledby="hddp-heading">
+  <h2 class="section-heading" id="hddp-heading">High-Dimensional Dynamic Programming</h2>
+  <p class="section-copy">Notebooks comparing methods for solving occasionally binding constraint and sovereign default models. Each notebook can be viewed in the browser, inspected on GitHub, or downloaded directly.</p>
+
+  <div class="method-group">
+    <h3 class="method-heading">JAX-based methods</h3>
+    <p class="method-note">Implementations using accelerated array computation and automatic differentiation in Python.</p>
+    <ol class="notebook-list">
+      <li class="notebook-item">
+        <div class="code-year">JAX · Python</div>
+        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Download</a></div></div>
+      </li>
+      <li class="notebook-item">
+        <div class="code-year">JAX · Python</div>
+        <div><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Download</a></div></div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="method-group">
+    <h3 class="method-heading">Adaptive Sparse Grids</h3>
+    <p class="method-note">Julia and Python implementations using sparse-grid approximation to manage higher-dimensional state spaces.</p>
+    <ol class="notebook-list">
+      <li class="notebook-item">
+        <div class="code-year">ASG · Julia</div>
+        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Download</a></div></div>
+      </li>
+      <li class="notebook-item">
+        <div class="code-year">ASG · Python</div>
+        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Download</a></div></div>
+      </li>
+      <li class="notebook-item">
+        <div class="code-year">ASG · Julia</div>
+        <div><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Download</a></div></div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="method-group">
+    <h3 class="method-heading">Artificial Neural Networks</h3>
+    <p class="method-note">Neural-network function approximation using Flux.jl and PyTorch.</p>
+    <ol class="notebook-list">
+      <li class="notebook-item">
+        <div class="code-year">ANN · Flux.jl</div>
+        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Download</a></div></div>
+      </li>
+      <li class="notebook-item">
+        <div class="code-year">ANN · PyTorch</div>
+        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Download</a></div></div>
+      </li>
+    </ol>
+  </div>
+</section>

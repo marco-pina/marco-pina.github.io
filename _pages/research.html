@@ -1,0 +1,86 @@
+---
+layout: signal
+title: "Research"
+permalink: /research/
+description: "Published work, working papers, and early-stage research by Marco Piña."
+page_class: content-page
+nav: research
+---
+
+<header class="page-header">
+  <p class="section-label">Research</p>
+  <h1>Research projects and publications</h1>
+  <p class="page-intro">My research lies at the intersection of macroeconomics and finance, with a focus on financial stability, emerging economies, and macroprudential policy.</p>
+</header>
+
+<section class="content-section" aria-labelledby="working-papers-heading">
+  <h2 class="section-heading" id="working-papers-heading">Working papers</h2>
+  <ol class="paper-list">
+    {% for paper in site.wp reversed %}
+      <li class="paper-item">
+        <div>
+          <span class="paper-type">Working paper</span>
+          <div class="paper-year">{{ paper.date | date: "%Y-%m-%d" }}</div>
+        </div>
+        <article>
+          <h3 class="paper-title">{{ paper.title }}</h3>
+          {% if paper.coauthor1 %}
+            <p class="paper-meta">With
+              {% if paper.coauthorURL1 %}<a class="inline-link" href="{{ paper.coauthorURL1 }}">{{ paper.coauthor1 }}</a>{% else %}{{ paper.coauthor1 }}{% endif %}{% if paper.coauthor2 %} and {% if paper.coauthorURL2 %}<a class="inline-link" href="{{ paper.coauthorURL2 }}">{{ paper.coauthor2 }}</a>{% else %}{{ paper.coauthor2 }}{% endif %}{% endif %}.
+            </p>
+          {% endif %}
+          <div class="paper-abstract">{{ paper.content }}</div>
+          {% if paper.paperurl %}
+            <div class="paper-actions"><a href="{{ paper.paperurl }}">Read the draft</a></div>
+          {% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section" aria-labelledby="published-heading">
+  <h2 class="section-heading" id="published-heading">Published work</h2>
+  <ol class="paper-list">
+    {% for paper in site.publications reversed %}
+      <li class="paper-item">
+        <div>
+          <span class="paper-type">Journal article</span>
+          <div class="paper-year">{{ paper.date | date: "%Y-%m-%d" }}</div>
+        </div>
+        <article>
+          <h3 class="paper-title">{{ paper.title }}</h3>
+          <p class="paper-meta">
+            {{ paper.venue }}{% if paper.coauthor %}, with {% if paper.coauthorURL %}<a class="inline-link" href="{{ paper.coauthorURL }}">{{ paper.coauthor }}</a>{% else %}{{ paper.coauthor }}{% endif %}{% endif %}.
+          </p>
+          <div class="paper-abstract">{{ paper.content }}</div>
+          {% if paper.paperurl %}
+            <div class="paper-actions"><a href="{{ paper.paperurl }}">View article</a></div>
+          {% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section" aria-labelledby="work-in-progress-heading">
+  <h2 class="section-heading" id="work-in-progress-heading">Work in progress</h2>
+  <p class="section-copy">Early-stage projects for which I currently share only a title and a brief abstract. Drafts are not yet available.</p>
+  <ol class="paper-list">
+    {% for paper in site.wip reversed %}
+      <li class="paper-item">
+        <div>
+          <span class="paper-type">Work in progress</span>
+          <div class="paper-year">{{ paper.date | date: "%Y-%m-%d" }}</div>
+        </div>
+        <article>
+          <h3 class="paper-title">{{ paper.title }}</h3>
+          {% if paper.coauthor %}
+            <p class="paper-meta">With {% if paper.coauthorURL %}<a class="inline-link" href="{{ paper.coauthorURL }}">{{ paper.coauthor }}</a>{% else %}{{ paper.coauthor }}{% endif %}.</p>
+          {% endif %}
+          <div class="paper-abstract">{{ paper.content }}</div>
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</section>

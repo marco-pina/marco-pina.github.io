@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en-US' | slice: 0, 2 }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f7fa">
+    {% assign page_title = page.title | default: "" %}
+    {% assign page_description = page.description | default: site.description %}
+    <title>{% if page_title != "" %}{{ page_title }} — {{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page_title != "" %}{{ page_title }} — {{ site.name }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/modern.css' | relative_url }}">
+    {% if jekyll.environment == "production" and site.analytics.google.tracking_id %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.analytics.google.tracking_id }}');
+      </script>
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-name" href="{{ '/' | relative_url }}">Marco Piña</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a{% if page.nav == 'research' %} class="is-active" aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a>
+          <a{% if page.nav == 'code' %} class="is-active" aria-current="page"{% endif %} href="{{ '/code/' | relative_url }}">Code</a>
+          <a href="{{ site.author.cv }}">CV</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="site-main{% if page.page_class %} {{ page.page_class }}{% endif %}">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <span>Charlottesville, Virginia</span>
+        <nav class="footer-links" aria-label="Profile links">
+          <a href="mailto:{{ site.author.email }}">Email</a>
+          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

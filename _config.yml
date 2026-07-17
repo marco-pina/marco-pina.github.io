@@ -1,0 +1,51 @@
+locale: "en-US"
+title: "Marco Piña — Economist"
+name: "Marco Piña"
+description: "Economics PhD candidate at the University of Virginia working in macroeconomics and international finance."
+url: "https://marco-pina.github.io"
+baseurl: ""
+repository: "marco-pina/marco-pina.github.io"
+theme: null
+encoding: "utf-8"
+future: false
+timezone: "Etc/UTC"
+
+author:
+  email: "wju9nq@virginia.edu"
+  github: "marco-pina"
+  googlescholar: "https://scholar.google.com/citations?user=lxZ9n5kAAAAJ&hl=en&oi=ao"
+  cv: "https://docs.google.com/gview?url=https://raw.githubusercontent.com/marco-pina/resume/main/marcopinaCV.pdf"
+
+analytics:
+  google:
+    tracking_id: "G-TKFWRY9XZ4"
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  publications:
+    output: false
+  wp:
+    output: false
+  wip:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: signal
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
