@@ -29,7 +29,10 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
       <header class="site-header">
-        <a class="site-name" href="{{ '/' | relative_url }}">Marco Piña</a>
+        <a class="site-identity" href="{{ '/' | relative_url }}" aria-label="Marco Piña, University of Virginia — home">
+          <span class="site-name">Marco Piña</span>
+          <span class="site-affiliation">University of Virginia</span>
+        </a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a{% if page.nav == 'research' %} class="is-active" aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a>
           <a{% if page.nav == 'code' %} class="is-active" aria-current="page"{% endif %} href="{{ '/code/' | relative_url }}">Code</a>
