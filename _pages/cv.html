@@ -1,0 +1,24 @@
+---
+layout: signal
+title: "Curriculum vitae"
+permalink: /cv/
+description: "Curriculum vitae of Marco Piña."
+page_class: content-page cv-page
+nav: cv
+---
+
+<header class="page-header cv-header">
+  <p class="section-label">Curriculum vitae</p>
+  <h1>Curriculum vitae</h1>
+  <p class="page-intro">View my current CV below, open the viewer in a separate tab, or download the PDF.</p>
+  <div class="cv-actions" aria-label="Curriculum vitae options">
+    <a href="{{ site.author.cv_viewer_full | escape }}" target="_blank" rel="noopener">Open viewer in new tab</a>
+    <a href="{{ site.author.cv_pdf | escape }}">Download PDF</a>
+  </div>
+</header>
+
+<section class="cv-viewer" aria-label="Embedded curriculum vitae">
+  <iframe src="{{ site.author.cv_viewer | escape }}" title="Marco Piña curriculum vitae" loading="lazy" allowfullscreen></iframe>
+</section>
+
+<p class="cv-fallback">If the embedded viewer does not load, use <a href="{{ site.author.cv_viewer_full | escape }}" target="_blank" rel="noopener">the full-page viewer</a> or <a href="{{ site.author.cv_pdf | escape }}">download the PDF</a>.</p>

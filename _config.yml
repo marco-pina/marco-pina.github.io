@@ -14,7 +14,10 @@ author:
   email: "wju9nq@virginia.edu"
   github: "marco-pina"
   googlescholar: "https://scholar.google.com/citations?user=lxZ9n5kAAAAJ&hl=en&oi=ao"
-  cv: "https://docs.google.com/gview?url=https://raw.githubusercontent.com/marco-pina/resume/main/marcopinaCV.pdf"
+  cv: "/cv/"
+  cv_pdf: "https://raw.githubusercontent.com/marco-pina/resume/main/marcopinaCV.pdf"
+  cv_viewer: "https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fmarco-pina%2Fresume%2Fmain%2FmarcopinaCV.pdf"
+  cv_viewer_full: "https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fmarco-pina%2Fresume%2Fmain%2FmarcopinaCV.pdf"
 
 analytics:
   google:
