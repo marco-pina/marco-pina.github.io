@@ -151,9 +151,16 @@ a:focus-visible {
 .home-role {
   max-width: 700px;
   margin: 33px 0 0;
+  color: var(--body);
   font-size: clamp(21px, 2vw, 29px);
   line-height: 1.35;
   letter-spacing: -.025em;
+}
+
+.home-role strong {
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: inset 0 -.18em rgba(228, 72, 47, .12);
 }
 
 .home-bio {
