@@ -118,10 +118,10 @@ a:focus-visible {
 .home-hero {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 760px) 190px;
+  grid-template-columns: minmax(0, 760px) 210px;
   align-items: center;
-  justify-content: space-between;
-  gap: clamp(64px, 8vw, 124px);
+  justify-content: start;
+  gap: clamp(64px, 7vw, 104px);
   padding: 108px 0 118px;
 }
 
@@ -210,7 +210,7 @@ a:focus-visible {
 }
 
 .home-portrait {
-  width: 190px;
+  width: 210px;
   aspect-ratio: 1;
   margin: 0;
   overflow: hidden;
@@ -544,7 +544,7 @@ a:focus-visible {
     gap: 17px;
   }
 
-  .home-portrait { width: 150px; }
+  .home-portrait { width: 165px; }
   .content-page { padding: 68px 0 84px; }
   .page-header { margin-bottom: 58px; }
   .cv-header { margin-bottom: 34px; }
