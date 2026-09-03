@@ -17,7 +17,7 @@ redirect_from:
 
 <section class="content-section" id="high-dimensional-dynamic-programming" aria-labelledby="hddp-heading">
   <h2 class="section-heading" id="hddp-heading">High-Dimensional Dynamic Programming</h2>
-  <p class="section-copy">Notebooks comparing methods for solving occasionally binding constraint and sovereign default models. Each notebook can be viewed in the browser, inspected on GitHub, or downloaded directly.</p>
+  <p class="section-copy">A set of annotated notebooks comparing dense JAX methods, adaptive sparse grids, and neural-network approximations for occasionally binding constraint and sovereign default models. Each example now includes a computational roadmap, interpretation notes, and a compact visual summary.</p>
 
   <div class="method-group">
     <h3 class="method-heading">JAX-based methods</h3>
@@ -25,11 +25,17 @@ redirect_from:
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">JAX · Python</div>
-        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">Time iteration with JIT-compiled policy updates. The multiplier identifies where the collateral constraint binds.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-jax.png' | relative_url }}" alt="Policy functions and Kuhn–Tucker multipliers from the JAX occasionally binding constraints notebook" loading="lazy"><figcaption>Policy function and Kuhn–Tucker multiplier</figcaption></figure>
+        </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">JAX · Python</div>
-        <div><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><p class="notebook-summary">Smoothed value-function iteration with endogenous long-term bond prices. The summary pairs expected debt choices with the default-risk surface.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/default-jax.png' | relative_url }}" alt="Expected sovereign debt policies and a heatmap of default probabilities from the JAX notebook" loading="lazy"><figcaption>Expected debt policy and default-risk surface</figcaption></figure>
+        </div>
       </li>
     </ol>
   </div>
@@ -40,15 +46,24 @@ redirect_from:
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">ASG · Julia</div>
-        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">Adaptive policy iteration in Julia. Grid nodes concentrate where the collateral constraint creates a kink in the policy function.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-julia.png' | relative_url }}" alt="Debt policy functions and adaptive sparse-grid nodes from the Julia occasionally binding constraints notebook" loading="lazy"><figcaption>Policy function and adaptive grid points</figcaption></figure>
+        </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ASG · Python</div>
-        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">DDSG/Tasmanian approximation with a coarse warm start and adaptive refinement. Node colors report the collateral multiplier.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-python.png' | relative_url }}" alt="Debt policy functions and multiplier-colored sparse-grid nodes from the Python adaptive-grid notebook" loading="lazy"><figcaption>Policy function and multiplier-colored grid points</figcaption></figure>
+        </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ASG · Julia</div>
-        <div><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><p class="notebook-summary">Adaptive approximations for repayment and default values, combined with endogenous long-term debt prices.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/default-asg-julia.png' | relative_url }}" alt="Sovereign debt policies and adaptive repayment-value grid nodes from the Julia notebook" loading="lazy"><figcaption>Debt policy and repayment-value grid points</figcaption></figure>
+        </div>
       </li>
     </ol>
   </div>
@@ -59,11 +74,17 @@ redirect_from:
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">ANN · Flux.jl</div>
-        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">A bounded Flux.jl policy network trained on a Fischer–Burmeister equilibrium residual.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-flux.png' | relative_url }}" alt="Training loss and learned debt policy from the Flux neural-network notebook" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
+        </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ANN · PyTorch</div>
-        <div><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Download</a></div></div>
+        <div class="notebook-card">
+          <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">A bounded PyTorch policy network with stochastic collocation and complementary-slackness training.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Download</a></div></div>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-pytorch.png' | relative_url }}" alt="Training loss and learned debt policy from the PyTorch neural-network notebook" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
+        </div>
       </li>
     </ol>
   </div>

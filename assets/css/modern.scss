@@ -367,6 +367,48 @@ a:focus-visible {
 
 .notebook-item { grid-template-columns: 160px minmax(0, 1fr); }
 
+.notebook-card {
+  display: grid;
+  grid-template-columns: minmax(220px, .72fr) minmax(360px, 1.28fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.notebook-summary {
+  margin: 10px 0 0;
+  color: var(--body);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.notebook-preview { margin: 0; }
+
+.notebook-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.3 / 1;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+.notebook-preview figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 980px) {
+  .notebook-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
 .cv-page { max-width: 1100px; }
 
 .cv-header { margin-bottom: 42px; }
