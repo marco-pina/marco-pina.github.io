@@ -2,8 +2,8 @@
 layout: signal
 title: "Code"
 permalink: /code/
-description: "High-dimensional dynamic programming notebooks and replication code by Marco Piña."
-page_class: content-page
+description: "Dynamic programming notebooks, heterogeneous-agent models, and replication code by Marco Piña."
+page_class: content-page code-page
 nav: code
 redirect_from:
   - /codes/
@@ -12,95 +12,139 @@ redirect_from:
 <header class="page-header">
   <p class="section-label">Code</p>
   <h1>Computational methods and replication code</h1>
-  <p class="page-intro">I share implementations that have been useful in my own study of quantitative macroeconomics and finance. The material begins with notebooks on high-dimensional dynamic programming, followed by learning-oriented paper replications.</p>
+  <p class="page-intro">Notebooks and model implementations from my work in quantitative macroeconomics and finance. Explore a topic below.</p>
 </header>
 
-<section class="content-section" id="high-dimensional-dynamic-programming" aria-labelledby="hddp-heading">
-  <h2 class="section-heading" id="hddp-heading">High-Dimensional Dynamic Programming</h2>
-  <p class="section-copy">A set of annotated notebooks comparing dense JAX methods, adaptive sparse grids, and neural-network approximations for occasionally binding constraint and sovereign default models. Each example now includes a computational roadmap, interpretation notes, and a compact visual summary.</p>
+<details class="code-section" id="high-dimensional-dynamic-programming">
+  <summary><h2 id="hddp-heading">High-Dimensional Dynamic Programming</h2></summary>
+  <div class="code-section-body">
+  <p class="section-copy">Annotated notebooks on occasionally binding constraints and sovereign default, using three approaches to dynamic programming.</p>
 
-  <div class="method-group">
-    <h3 class="method-heading">JAX-based methods</h3>
+  <details class="method-group" id="jax">
+    <summary><h3>JAX <span>Accelerated array computation</span></h3></summary>
+    <div class="method-body">
     <p class="method-note">Implementations using accelerated array computation and automatic differentiation in Python.</p>
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">JAX · Python</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">Time iteration with JIT-compiled policy updates. The multiplier identifies where the collateral constraint binds.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/obc_JAX.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/obc-jax.png' | relative_url }}" alt="Policy functions and Kuhn–Tucker multipliers from the JAX occasionally binding constraints notebook" loading="lazy"><figcaption>Policy function and Kuhn–Tucker multiplier</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-jax.png' | relative_url }}" alt="Policy functions and Kuhn–Tucker multipliers from the JAX occasionally binding constraints notebook" width="1389" height="593" loading="lazy"><figcaption>Policy function and Kuhn–Tucker multiplier</figcaption></figure>
         </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">JAX · Python</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><p class="notebook-summary">Smoothed value-function iteration with endogenous long-term bond prices. The summary pairs expected debt choices with the default-risk surface.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/JAX/default_LT_JAX.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/default-jax.png' | relative_url }}" alt="Expected sovereign debt policies and a heatmap of default probabilities from the JAX notebook" loading="lazy"><figcaption>Expected debt policy and default-risk surface</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/default-jax.png' | relative_url }}" alt="Expected sovereign debt policies and a heatmap of default probabilities from the JAX notebook" width="1285" height="536" loading="lazy"><figcaption>Expected debt policy and default-risk surface</figcaption></figure>
         </div>
       </li>
     </ol>
-  </div>
+    </div>
+  </details>
 
-  <div class="method-group">
-    <h3 class="method-heading">Adaptive Sparse Grids</h3>
+  <details class="method-group" id="asg">
+    <summary><h3>ASG <span>Adaptive sparse grids</span></h3></summary>
+    <div class="method-body">
     <p class="method-note">Julia and Python implementations using sparse-grid approximation to manage higher-dimensional state spaces.</p>
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">ASG · Julia</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">Adaptive policy iteration in Julia. Grid nodes concentrate where the collateral constraint creates a kink in the policy function.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_julia.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-julia.png' | relative_url }}" alt="Debt policy functions and adaptive sparse-grid nodes from the Julia occasionally binding constraints notebook" loading="lazy"><figcaption>Policy function and adaptive grid points</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-julia.png' | relative_url }}" alt="Debt policy functions and adaptive sparse-grid nodes from the Julia occasionally binding constraints notebook" width="900" height="400" loading="lazy"><figcaption>Policy function and adaptive grid points</figcaption></figure>
         </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ASG · Python</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">DDSG/Tasmanian approximation with a coarse warm start and adaptive refinement. Node colors report the collateral multiplier.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/obc_ASG_python.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-python.png' | relative_url }}" alt="Debt policy functions and multiplier-colored sparse-grid nodes from the Python adaptive-grid notebook" loading="lazy"><figcaption>Policy function and multiplier-colored grid points</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-asg-python.png' | relative_url }}" alt="Debt policy functions and multiplier-colored sparse-grid nodes from the Python adaptive-grid notebook" width="1390" height="536" loading="lazy"><figcaption>Policy function and multiplier-colored grid points</figcaption></figure>
         </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ASG · Julia</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Sovereign Default Model with Long-Term Debt</h4><p class="notebook-summary">Adaptive approximations for repayment and default values, combined with endogenous long-term debt prices.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ASG/default_LT_ASG_julia.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/default-asg-julia.png' | relative_url }}" alt="Sovereign debt policies and adaptive repayment-value grid nodes from the Julia notebook" loading="lazy"><figcaption>Debt policy and repayment-value grid points</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/default-asg-julia.png' | relative_url }}" alt="Sovereign debt policies and adaptive repayment-value grid nodes from the Julia notebook" width="1346" height="536" loading="lazy"><figcaption>Debt policy and repayment-value grid points</figcaption></figure>
         </div>
       </li>
     </ol>
-  </div>
+    </div>
+  </details>
 
-  <div class="method-group">
-    <h3 class="method-heading">Artificial Neural Networks</h3>
+  <details class="method-group" id="ann">
+    <summary><h3>ANN <span>Artificial neural networks</span></h3></summary>
+    <div class="method-body">
     <p class="method-note">Neural-network function approximation using Flux.jl and PyTorch.</p>
     <ol class="notebook-list">
       <li class="notebook-item">
         <div class="code-year">ANN · Flux.jl</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">A bounded Flux.jl policy network trained on a Fischer–Burmeister equilibrium residual.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_flux.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-flux.png' | relative_url }}" alt="Training loss and learned debt policy from the Flux neural-network notebook" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-flux.png' | relative_url }}" alt="Training loss and learned debt policy from the Flux neural-network notebook" width="1600" height="696" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
         </div>
       </li>
       <li class="notebook-item">
         <div class="code-year">ANN · PyTorch</div>
         <div class="notebook-card">
           <div class="notebook-copy"><h4 class="notebook-title">Occasionally Binding Constraints Model</h4><p class="notebook-summary">A bounded PyTorch policy network with stochastic collocation and complementary-slackness training.</p><div class="notebook-actions"><a href="https://nbviewer.org/github/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">View notebook</a><a href="https://github.com/marco-pina/Utilities/blob/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Source</a><a href="https://raw.githubusercontent.com/marco-pina/Utilities/main/jupyter_notebooks/ANN/obc_ANN_torch.ipynb">Download</a></div></div>
-          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-pytorch.png' | relative_url }}" alt="Training loss and learned debt policy from the PyTorch neural-network notebook" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
+          <figure class="notebook-preview"><img src="{{ '/images/code/obc-ann-pytorch.png' | relative_url }}" alt="Training loss and learned debt policy from the PyTorch neural-network notebook" width="1219" height="536" loading="lazy"><figcaption>Training history and learned policy</figcaption></figure>
         </div>
       </li>
     </ol>
+    </div>
+  </details>
   </div>
-</section>
+</details>
 
-<section class="content-section" aria-labelledby="replication-heading">
-  <h2 class="section-heading" id="replication-heading">Replication codes</h2>
-  <p class="section-copy">Julia implementations of influential models in macroeconomics and finance. These are learning-oriented replications and may contain simplifications relative to the original papers.</p>
-  <ol class="code-list">
-    <li class="code-item">
-      <div class="code-year">1994 · Aiyagari</div>
-      <div>
-        <h3 class="code-title">Uninsured Idiosyncratic Risk and Aggregate Saving</h3>
-        <p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_DT">Discrete time</a> · <a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_CT">Continuous time</a></p>
+<details class="code-section" id="heterogeneous-agents">
+  <summary><h2>Heterogeneous Agents</h2></summary>
+  <div class="code-section-body">
+  <p class="section-copy">From individual income risk to aggregate uncertainty. Each discrete-time example pairs a readable implementation with an efficient solver and one figure. These are teaching examples, with documented simplifications relative to the papers.</p>
+  <ol class="notebook-list">
+    <li class="notebook-item" id="huggett">
+      <div class="code-year">1993 · Huggett</div>
+      <div class="notebook-card">
+        <div class="notebook-copy">
+          <h3 class="notebook-title">The Risk-Free Rate in Heterogeneous-Agent Incomplete-Insurance Economies</h3>
+          <p class="notebook-summary">Precautionary saving and a market-clearing bond price. Seven income states and Young's method describe the stationary asset distribution.</p>
+          <div class="notebook-actions"><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/huggett1993/Huggett_illustrative.jl">Illustrative</a><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/huggett1993/Huggett_efficient.jl">Efficient</a><a href="https://github.com/marco-pina/Utilities/tree/main/Papers/huggett1993">Model notes</a></div>
+        </div>
+        <figure class="notebook-preview"><a href="{{ '/images/code/huggett.png' | relative_url }}"><img src="{{ '/images/code/huggett.png' | relative_url }}" alt="Huggett saving policies and the stationary asset distribution, including mass at the borrowing limit" width="2340" height="936" loading="lazy"></a><figcaption>Saving policies and stationary assets</figcaption></figure>
       </div>
     </li>
+    <li class="notebook-item" id="aiyagari">
+      <div class="code-year">1994 · Aiyagari</div>
+      <div class="notebook-card">
+        <div class="notebook-copy">
+          <h3 class="notebook-title">Uninsured Idiosyncratic Risk and Aggregate Saving</h3>
+          <p class="notebook-summary">A production economy in which household saving determines aggregate capital, wages, and the interest rate.</p>
+          <div class="notebook-actions"><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/Aiyagari1994_DT/Aiyagari_illustrative.jl">Illustrative</a><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/Aiyagari1994_DT/Aiyagari_efficient.jl">Efficient</a><a href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_DT">Model notes</a></div>
+          <p class="code-meta">Also available: <a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/Aiyagari1994_CT">continuous-time version</a>.</p>
+        </div>
+        <figure class="notebook-preview"><a href="{{ '/images/code/aiyagari.png' | relative_url }}"><img src="{{ '/images/code/aiyagari.png' | relative_url }}" alt="Aiyagari saving policies and the stationary distribution of household assets" width="2340" height="936" loading="lazy"></a><figcaption>Saving policies and stationary assets</figcaption></figure>
+      </div>
+    </li>
+    <li class="notebook-item" id="krusell-smith">
+      <div class="code-year">1998 · Krusell &amp; Smith</div>
+      <div class="notebook-card">
+        <div class="notebook-copy">
+          <h3 class="notebook-title">Income and Wealth Heterogeneity in the Macroeconomy</h3>
+          <p class="notebook-summary">Individual employment risk meets aggregate productivity shocks. Households use a simple forecasting rule for aggregate capital, updated until it agrees with the simulated economy.</p>
+          <div class="notebook-actions"><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/KrusellSmith1998/KrusellSmith_illustrative.jl">Illustrative</a><a href="https://github.com/marco-pina/Utilities/blob/main/Papers/KrusellSmith1998/KrusellSmith_efficient.jl">Efficient</a><a href="https://github.com/marco-pina/Utilities/tree/main/Papers/KrusellSmith1998">Model notes</a></div>
+        </div>
+        <figure class="notebook-preview"><a href="{{ '/images/code/krusell-smith.png' | relative_url }}"><img src="{{ '/images/code/krusell-smith.png' | relative_url }}" alt="Time-averaged Krusell–Smith asset distribution and an out-of-sample comparison of aggregate capital with its one-step forecast" width="2340" height="936" loading="lazy"></a><figcaption>Asset distribution and aggregate-capital forecast</figcaption></figure>
+      </div>
+    </li>
+  </ol>
+  </div>
+</details>
+
+<details class="code-section" id="other-replications">
+  <summary><h2>Other Replications</h2></summary>
+  <div class="code-section-body">
+  <ol class="code-list">
     <li class="code-item">
       <div class="code-year">1993 · Froot et al.</div>
       <div><h3 class="code-title">Risk Management: Coordinating Corporate Investment and Financing Policies</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/froot1993">View code</a></p></div>
@@ -130,4 +174,22 @@ redirect_from:
       <div><h3 class="code-title">A Macroprudential Theory of Foreign Reserve Accumulation</h3><p class="code-meta"><a class="inline-link" href="https://github.com/marco-pina/Utilities/tree/main/Papers/arce2021">View code</a></p></div>
     </li>
   </ol>
-</section>
+  </div>
+</details>
+
+<script>
+  // Keep direct links useful even when their section is initially collapsed.
+  function revealCodeAnchor() {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+    catch (_) { return; }
+    if (!target) return;
+    for (let element = target; element; element = element.parentElement) {
+      if (element.tagName === 'DETAILS') element.open = true;
+    }
+    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
+  window.addEventListener('hashchange', revealCodeAnchor);
+  window.addEventListener('load', revealCodeAnchor, { once: true });
+  revealCodeAnchor();
+</script>
