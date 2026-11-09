@@ -1,26 +1,38 @@
 ---
 layout: signal
 title: ""
-description: "Marco Piña is an Economics PhD candidate at the University of Virginia specializing in macro-finance."
+description: "Marco Piña studies macro-finance at the University of Virginia and builds AI tools for economic research."
 page_class: home-page
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<section class="home-hero" aria-labelledby="home-name">
-  <div class="home-copy">
+<section class="home-copy" aria-labelledby="home-name">
     <p class="kicker">Department of Economics</p>
     <h1 id="home-name">Marco Piña</h1>
     <p class="home-role">PhD candidate in Economics at the <strong>University of Virginia</strong>, working in <strong>macro-finance</strong>.</p>
-    <p class="home-bio">I study financial stability, with a focus on capital flows, financial frictions, and macroprudential policy. I use structural and empirical approaches to understand why some economies remain vulnerable to recurring financial crises while others become more resilient.</p>
-    <p class="home-note">Alongside my academic research, I have hands-on experience applying AI to economic research through my work with UVA’s <a href="https://econtai.org/">Economics of Transformative AI (EconTAI) Initiative</a>.</p>
-    <div class="home-links" aria-label="Primary links">
-      <a class="action-link" href="{{ '/research/' | relative_url }}">Research</a>
-      <a class="action-link" href="{{ site.author.cv | relative_url }}">Curriculum vitae</a>
-    </div>
-  </div>
-  <figure class="home-portrait">
-    <img src="{{ '/images/profile.png' | relative_url }}" alt="Portrait of Marco Piña">
-  </figure>
+    <p>I study financial stability, with a focus on capital flows, financial frictions, and macroprudential policy.</p>
+    <p>I also build AI tools for economic research. My experience includes work with UVA’s <a href="https://econtai.org/">Economics of Transformative AI (EconTAI) Initiative</a>.</p>
 </section>
+<section class="home-feature" id="trackers" aria-labelledby="feature-label" data-embed-style="{{ '/assets/css/tracker-embed.css' | relative_url }}">
+  <p class="section-label" id="feature-label">Trackers (Preview)</p>
+  <div class="tracker-controls" hidden>
+    <div role="group" aria-label="Choose a tracker">
+      <button type="button" aria-controls="speech-preview" aria-pressed="true">BIS Speech Atlas</button>
+      <button type="button" aria-controls="labor-preview" aria-pressed="false">AI labor markets</button>
+    </div>
+    <button type="button" class="tracker-play" aria-label="Pause automatic switching">Pause</button>
+  </div>
+  <article class="tracker-slide" id="speech-preview" aria-labelledby="speech-question">
+    <h2 id="speech-question">What are central bankers signaling?</h2>
+    <div class="tracker-canvas"></div>
+    <a class="text-link" href="{{ '/ai-for-economics/trackers/bis-speech-atlas.html' | relative_url }}">Open the BIS Speech Atlas <span aria-hidden="true">→</span></a>
+  </article>
+  <article class="tracker-slide" id="labor-preview" aria-labelledby="labor-question">
+    <h2 id="labor-question">Where is demand for AI skills growing?</h2>
+    <div class="tracker-canvas"></div>
+    <a class="text-link" href="{{ '/ai-for-economics/trackers/ai-labor-markets.html' | relative_url }}">Open the AI labor market tracker <span aria-hidden="true">→</span></a>
+  </article>
+</section>
+<script defer src="{{ '/assets/js/home-trackers.js' | relative_url }}"></script>

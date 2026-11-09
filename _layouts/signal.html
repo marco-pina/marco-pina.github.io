@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f4f7fa">
+    <meta name="theme-color" content="#fbf8f1">
     {% assign page_title = page.title | default: "" %}
     {% assign page_description = page.description | default: site.description %}
     <title>{% if page_title != "" %}{{ page_title }} — {{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
@@ -28,13 +28,27 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
-      <header class="site-header">
-        <a class="site-name" href="{{ '/' | relative_url }}">Marco Piña</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a{% if page.nav == 'research' %} class="is-active" aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a>
-          <a{% if page.nav == 'code' %} class="is-active" aria-current="page"{% endif %} href="{{ '/code/' | relative_url }}">Code</a>
-          <a{% if page.nav == 'cv' %} class="is-active" aria-current="page"{% endif %} href="{{ site.author.cv | relative_url }}">CV</a>
-        </nav>
+      <header class="site-rail">
+        <div class="rail-inner">
+          <a class="profile-home" href="{{ '/' | relative_url }}" aria-label="Marco Piña — home"{% if page.url == '/' %} aria-current="page"{% endif %}>
+            <img src="{{ '/images/profile.png' | relative_url }}" alt="Marco Piña" width="160" height="160">
+            <span class="mobile-identity">Marco Piña<small>University of Virginia</small></span>
+          </a>
+          <nav aria-label="Primary navigation">
+            <ul class="site-nav">
+              <li><a{% if page.nav == 'research' %} aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a></li>
+              <li class="ai-family">
+                <a{% if page.nav == 'ai' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/' | relative_url }}">AI for Economics</a>
+                <ul class="ai-subnav" aria-label="AI for Economics">
+                  <li><a{% if page.nav == 'trackers' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/trackers/' | relative_url }}">Trackers</a></li>
+                  <li><a{% if page.nav == 'tutorials' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/tutorials/' | relative_url }}">Tutorials</a></li>
+                </ul>
+              </li>
+              <li><a{% if page.nav == 'code' %} aria-current="page"{% endif %} href="{{ '/code/' | relative_url }}">Dynamic Programming</a></li>
+              <li><a{% if page.nav == 'cv' %} aria-current="page"{% endif %} href="{{ site.author.cv | relative_url }}">CV</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main id="main-content" class="site-main{% if page.page_class %} {{ page.page_class }}{% endif %}">

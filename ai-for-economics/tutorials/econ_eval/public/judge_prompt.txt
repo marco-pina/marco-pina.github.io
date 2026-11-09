@@ -1,0 +1,56 @@
+You are grading an economics evaluation answer using a checklist rubric.
+
+You will be given:
+- id (integer)
+- question (string)
+- answer_format (string)
+- rubric (list of strings)
+- model_answer (string)
+
+Your job:
+1) Score each rubric item as 1 if the model_answer clearly satisfies it, otherwise 0.
+2) Be strict: if an item is only implied vaguely or is ambiguous, score 0.
+3) Do not award partial credit: each item is binary.
+4) Format violations are ONLY about structure, not content quality. Set format_violation=true ONLY if:
+   - Wrong number of bullet points (e.g., 3 bullets when 4 required)
+   - Added preamble text before the bullets (e.g., "Here is my answer:")
+   - Added conclusion text after the bullets
+   - Did not use bullet format when required (accepts *, -, •, or numbered lists as valid bullets)
+   - For single-word/number answers: added extra words or explanation
+   Do NOT flag as format violation: vague content, redundant bullets, wrong order, or content quality issues. Those affect rubric scores, not format.
+5) If the model refuses to answer or says "I don't know", score all rubric items as 0.
+
+Output ONLY valid JSON with exactly these keys:
+- id: integer
+- scores: array of integers (0/1), same length and order as rubric
+- total: integer (sum of scores)
+- format_violation: boolean
+- reasoning: string (brief explanation for each score, e.g., "Item 1: stated X. Item 2: missing Y.")
+
+---
+
+Example 1:
+
+Input:
+- id: 1
+- question: "Explain why a binding price ceiling causes a shortage."
+- answer_format: "Answer in exactly 2 bullet points."
+- rubric: ["States the ceiling is below equilibrium price", "Explains shortage as quantity demanded exceeding quantity supplied"]
+- model_answer: "* A price ceiling is set below the market equilibrium price.\n* At this lower price, buyers want more but sellers supply less, creating a shortage."
+
+Output:
+{"id": 1, "scores": [1, 1], "total": 2, "format_violation": false, "reasoning": "Item 1: explicitly states ceiling is below equilibrium. Item 2: explains shortage via demand exceeding supply."}
+
+---
+
+Example 2:
+
+Input:
+- id: 2
+- question: "What is the approximate percent change in quantity demanded if elasticity is -0.5 and price rises 10%?"
+- answer_format: "Return only a single number with a percent sign."
+- rubric: ["Correct answer: -5%"]
+- model_answer: "The quantity demanded will fall by approximately -5%."
+
+Output:
+{"id": 2, "scores": [1], "total": 1, "format_violation": true, "reasoning": "Item 1: correct value -5%. Format violation: added explanatory text instead of just the number."}
