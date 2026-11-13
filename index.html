@@ -15,24 +15,20 @@ redirect_from:
     <p>I study financial stability, with a focus on capital flows, financial frictions, and macroprudential policy.</p>
     <p>I also build AI tools for economic research. My experience includes work with UVA’s <a href="https://econtai.org/">Economics of Transformative AI (EconTAI) Initiative</a>.</p>
 </section>
-<section class="home-feature" id="trackers" aria-labelledby="feature-label" data-embed-style="{{ '/assets/css/tracker-embed.css' | relative_url }}">
-  <p class="section-label" id="feature-label">Trackers (Preview)</p>
-  <div class="tracker-controls" hidden>
-    <div role="group" aria-label="Choose a tracker">
-      <button type="button" aria-controls="speech-preview" aria-pressed="true">BIS Speech Atlas</button>
-      <button type="button" aria-controls="labor-preview" aria-pressed="false">AI labor markets</button>
-    </div>
-    <button type="button" class="tracker-play" aria-label="Pause automatic switching">Pause</button>
-  </div>
-  <article class="tracker-slide" id="speech-preview" aria-labelledby="speech-question">
-    <h2 id="speech-question">What are central bankers signaling?</h2>
-    <div class="tracker-canvas"></div>
-    <a class="text-link" href="{{ '/ai-for-economics/trackers/bis-speech-atlas.html' | relative_url }}">Open the BIS Speech Atlas <span aria-hidden="true">→</span></a>
-  </article>
-  <article class="tracker-slide" id="labor-preview" aria-labelledby="labor-question">
-    <h2 id="labor-question">Where is demand for AI skills growing?</h2>
-    <div class="tracker-canvas"></div>
-    <a class="text-link" href="{{ '/ai-for-economics/trackers/ai-labor-markets.html' | relative_url }}">Open the AI labor market tracker <span aria-hidden="true">→</span></a>
-  </article>
+<section class="home-feature" aria-labelledby="ai-heading">
+  <h2 id="ai-heading">AI for Economics</h2>
+  <ul class="home-resources">
+    <li id="trackers">
+      <a href="{{ '/ai-for-economics/trackers/' | relative_url }}" aria-labelledby="trackers-label" aria-describedby="trackers-description">
+        <span class="resource-name" id="trackers-label">Trackers <span aria-hidden="true">→</span></span>
+        <span id="trackers-description">Explore central bank speeches in the BIS Speech Atlas, or see where employers are asking for AI skills.</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/ai-for-economics/tutorials/' | relative_url }}" aria-labelledby="tutorials-label" aria-describedby="tutorials-description">
+        <span class="resource-name" id="tutorials-label">Tutorials <span aria-hidden="true">→</span></span>
+        <span id="tutorials-description">Four runnable notebooks show how to use AI in economic research, from searching the literature to testing how well a model answers economics questions.</span>
+      </a>
+    </li>
+  </ul>
 </section>
-<script defer src="{{ '/assets/js/home-trackers.js' | relative_url }}"></script>

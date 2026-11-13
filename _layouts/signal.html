@@ -37,13 +37,7 @@
           <nav aria-label="Primary navigation">
             <ul class="site-nav">
               <li><a{% if page.nav == 'research' %} aria-current="page"{% endif %} href="{{ '/research/' | relative_url }}">Research</a></li>
-              <li class="ai-family">
-                <a{% if page.nav == 'ai' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/' | relative_url }}">AI for Economics</a>
-                <ul class="ai-subnav" aria-label="AI for Economics">
-                  <li><a{% if page.nav == 'trackers' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/trackers/' | relative_url }}">Trackers</a></li>
-                  <li><a{% if page.nav == 'tutorials' %} aria-current="page"{% endif %} href="{{ '/ai-for-economics/tutorials/' | relative_url }}">Tutorials</a></li>
-                </ul>
-              </li>
+              <li><a class="nav-ai"{% if page.nav == 'ai' %} aria-current="page"{% elsif page.nav == 'trackers' or page.nav == 'tutorials' %} aria-current="location"{% endif %} href="{{ '/ai-for-economics/' | relative_url }}">AI for Economics</a></li>
               <li><a{% if page.nav == 'code' %} aria-current="page"{% endif %} href="{{ '/code/' | relative_url }}">Dynamic Programming</a></li>
               <li><a{% if page.nav == 'cv' %} aria-current="page"{% endif %} href="{{ site.author.cv | relative_url }}">CV</a></li>
             </ul>
